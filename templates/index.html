@@ -1,0 +1,12 @@
+<!Doctype html>
+<html>
+  <head>Realworld100 | file checking program</head>
+  <body>
+    <form method="post" action="">
+        <input type="text" name="regex" /><input type="submit" value="Submit" />
+        {% csrf_token %}
+    </form>
+    <hr />
+    {{ is_file_exist }}
+  </body>
+</html>
